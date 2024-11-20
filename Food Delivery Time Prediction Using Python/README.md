@@ -17,12 +17,12 @@ This project utilizes the following Python libraries:
 
 ## 📊 Dataset
 The dataset used in this project contains historical data of food delivery times, distances, and other relevant features.  
-You can download the dataset from (https://github.com/vvaibhavr54/Notebooks/Food-Delivery-Time-Prediction)
+You can download the dataset from (https://github.com/vaibhavr54/Notebooks/Food-Delivery-Time-Prediction)
 
 ## 🚀 How to Run
 1. Clone the repository and navigate to the project directory:
    ```
-   git clone https://github.com/vvaibhavr54/Notebooks/Food-Delivery-Time-Prediction.git
+   git clone https://github.com/vaibhavr54/Notebooks/Food-Delivery-Time-Prediction.git
    cd Food-Delivery-Time-Prediction
    ```
 2. Open the Jupyter Notebook:
