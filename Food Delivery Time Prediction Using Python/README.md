@@ -1,45 +1,73 @@
-# Food Delivery Time Prediction Using Python
 
-## 📜 Project Overview
-This project focuses on predicting the delivery time for food orders using **Machine Learning** algorithms. Accurate delivery time predictions are essential for maintaining transparency and customer satisfaction in food delivery services like **Zomato** and **Swiggy**. By leveraging past delivery data, this system predicts real-time delivery times based on the distance between restaurants and customer locations.
+# **🍽️ Food Delivery Time Prediction**  
 
-## ✨ Objective
-The goal is to develop a Machine Learning model that predicts food delivery time by:
-- Calculating the distance between the food preparation point and the delivery location.
-- Analyzing historical delivery data to identify patterns and relationships between distance and time.
-
-## 🔧 Tools and Libraries
-This project utilizes the following Python libraries:
-- **NumPy**: For numerical computations.
-- **Pandas**: For data manipulation and preprocessing.
-- **Matplotlib** and **Seaborn**: For data visualization.
-- **Scikit-learn**: For building and evaluating Machine Learning models.
-
-## 📊 Dataset
-The dataset used in this project contains historical data of food delivery times, distances, and other relevant features.  
-You can download the dataset from https://statso.io/food-delivery-time-prediction-case-study/
-
-## 🚀 How to Run
-1. Clone the repository and navigate to the project directory:
-   ```
-   git clone https://github.com/vaibhavr54/Notebooks/Food Delivery Time Prediction.git
-   cd Food Delivery Time Prediction
-   ```
-2. Open the Jupyter Notebook:
-   ```
-   jupyter notebook Food Delivery Time Prediction.ipynb
-   ```
-
-## 📈 Outputs
-- Predicted delivery time for new food orders based on input distance and other features.
-- Visualizations highlighting the relationship between distance and delivery time.
-
-## 🌟 Applications
-This project demonstrates how Machine Learning can be used to:
-- Enhance customer satisfaction by providing accurate delivery time estimates.
-- Improve delivery logistics for food delivery services.
-
-## 📬 Contact
-For any questions or suggestions, feel free to contact me at vaibhavrakshe9220@gmail.com.
+A **Flask-based web application** that predicts the estimated delivery time for food orders using **Machine Learning**. The system takes in user inputs like **age of the delivery partner, ratings of previous deliveries, and total delivery distance** to provide an accurate prediction.  
 
 ---
+
+## **🛠️ Tech Stack Used**  
+
+### **Backend**  
+- **Flask** – Lightweight Python web framework  
+- **scikit-learn** – Machine Learning model for prediction  
+- **pandas & NumPy** – Data processing  
+- **pickle** – Model serialization (`model.pkl`)  
+
+### **Frontend**  
+- **HTML, CSS** – User interface  
+- **JavaScript (Vanilla)** – Form validation and API calls  
+
+---
+
+## **🚀 Features**  
+
+✔ **ML-based Prediction:** Uses a trained model to estimate food delivery time  
+✔ **Real-time User Input Handling:** Inputs age, ratings, and distance for prediction  
+✔ **Input Validation:** Ensures valid inputs for accurate predictions  
+✔ **Interactive UI:** Simple, clean, and responsive frontend  
+✔ **Flask API Endpoint:** Accepts user inputs and returns predicted time  
+
+---
+
+## **🔧 How to Set Up & Run Locally**  
+
+### **1️⃣ Clone the Repository**  
+```sh
+git clone https://github.com/YOUR_USERNAME/food-delivery-time-prediction.git  
+cd food-delivery-time-prediction
+```
+
+### **2️⃣ Install Dependencies**  
+Ensure you have Python installed, then run:  
+```sh
+pip install -r requirements.txt
+```
+
+### **3️⃣ Run the Flask App**  
+```sh
+python app.py
+```
+The app will be available at **`http://127.0.0.1:5000/`**.
+
+---
+
+## **📌 API Endpoint**  
+
+### **POST `/predict`**  
+Takes **JSON input** and returns the predicted delivery time.  
+
+#### **Request Example:**  
+```json
+{
+  "age": 25,
+  "ratings": 4.5,
+  "distance": 3000
+}
+```
+
+#### **Response Example:**  
+```json
+{
+  "predicted_time": 27.48
+}
+```
