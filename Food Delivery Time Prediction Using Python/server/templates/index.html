@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Time Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Food Delivery Time Prediction</h1>
+
+        <div class="input-group">
+            <label for="age">👤 Age of Delivery Partner:</label>
+            <input type="number" id="age" placeholder="Enter age">
+            <span class="error-message" id="age-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label for="ratings">⭐ Ratings of Previous Deliveries:</label>
+            <input type="number" step="0.1" id="ratings" placeholder="Enter rating (0 - 5)">
+            <span class="error-message" id="ratings-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label for="distance">📏 Total Distance (in meters):</label>
+            <input type="number" id="distance" placeholder="Enter distance (100 - 15000 meters)">
+            <span class="error-message" id="distance-error"></span>
+        </div>
+
+        <button onclick="predictDeliveryTime()">🚀 Predict Time</button>
+
+        <h2 id="result"></h2>
+    </div>
+</body>
+</html>
